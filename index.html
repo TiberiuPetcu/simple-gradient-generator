@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Gradient Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simple Gradient Generator</h1>
+      <div class="controls">
+        <div class="color-input">
+          <label for="startColor">From:</label>
+          <div class="color-preview" id="startColorPreview"></div>
+          <input type="color" id="startColor" value="#00FFFF" />
+        </div>
+
+        <div class="color-input">
+          <label for="endColor">To:</label>
+          <div class="color-preview" id="endColorPreview"></div>
+          <input type="color" id="endColor" value="#00ff00" />
+        </div>
+
+        <div class="select-input">
+          <label for="gradientType">Gradient Type:</label>
+          <select id="gradientType">
+            <option value="linear">Linear</option>
+            <optgroup label="Linear Angle">
+              <option value="linear-0">0°</option>
+              <option value="linear-15">15°</option>
+              <option value="linear-30">30°</option>
+              <option value="linear-45">45°</option>
+              <option value="linear-60">60°</option>
+              <option value="linear-75">75°</option>
+              <option value="linear-90">90°</option>
+              <option value="linear-105">105°</option>
+              <option value="linear-120">120°</option>
+              <option value="linear-135">135°</option>
+              <option value="linear-150">150°</option>
+              <option value="linear-165">165°</option>
+              <option value="linear-180">180°</option>
+              <option value="linear-195">195°</option>
+              <option value="linear-210">210°</option>
+              <option value="linear-225">225°</option>
+              <option value="linear-240">240°</option>
+              <option value="linear-255">255°</option>
+              <option value="linear-270">270°</option>
+              <option value="linear-285">285°</option>
+              <option value="linear-300">300°</option>
+              <option value="linear-315">315°</option>
+              <option value="linear-330">330°</option>
+              <option value="linear-345">345°</option>
+            </optgroup>
+            <option value="radial">Radial</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="gradient-box" id="gradientBox"></div>
+      <textarea id="cssCode" readonly></textarea>
+    </div>
+    <!-- Tiberiu Petcu <tiberiupetcu@gmail.com> -->
+    <script src="script.js"></script>
+  </body>
+</html>
